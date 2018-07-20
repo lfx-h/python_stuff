@@ -1,4 +1,4 @@
-import glob, sys, mmap
+import glob
 
 path = 'C:/xampp/htdocs/testdb/*.php'
 files = glob.glob(path)
