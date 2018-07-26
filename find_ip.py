@@ -1,4 +1,4 @@
-import re, urllib2, nltk
+import re, urllib2
 
 link = raw_input('Website link: ')
 if('http://' not in link):
