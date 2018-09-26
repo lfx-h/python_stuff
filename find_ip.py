@@ -14,7 +14,7 @@ print '1 - ip values'
 if(raw_input('>') == '1'):
 	try:
 		for item in raw:
-			ip = re.findall(r'(?:\d{1,3}\.)+(?:\d{1,3})', item)
+			ip = re.findall(r'(?:^|\b(?<!\.))(?:1?\d\d?|2[0-4]\d|25[0-5])(?:\.(?:1?\d\d?|2[0-4]\d|25[0-5])){3}(?=$|[^\w.])', item)
 			try:
 				if(len(ip[0].split('.')) > 3):
 					print ip
